@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '@mui/material/Button';
-
+import './NavBar.css'
+import CardWidget from '../CardWidget/Carwidget';
 
 function NavBar(){
     return(
@@ -14,6 +15,7 @@ function NavBar(){
         <li><Button variant="contained">Nosotros</Button></li>
         <li><Button variant="contained">Contacto</Button></li>
         </ul>
+        <CardWidget/>
       </header>
     )
 }
