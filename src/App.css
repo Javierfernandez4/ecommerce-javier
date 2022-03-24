@@ -38,3 +38,9 @@ ul.navbar li{
   padding: 10px;
   text-align: center;
 }
+
+.container-cards{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

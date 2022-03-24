@@ -1,16 +1,25 @@
+import React, { useState } from 'react'
 import './Card.css'
-export default function Card(props) { 
-    const {precio, talle, titulo} = props
+import ItemCount from '../ItemCount/ItemCount'
 
-    console.log("Precio", precio)
-    console.log("Talle", talle)
-    console.log("Titulo", titulo)
+
+export default function Card({data}) { 
+    const {precio, talle, titulo, stock} = data
+    const [ count, setCount ] = useState(1)
+ 
+    const addStock = () => {
+        setCount(count + 1 )
+    }
+    const removeStock = () => {
+        setCount(count - 1 )
+    }
     return(
         <div ClassName="card-item">
             <h2>{titulo}</h2>
             <p>Precio : $ {precio}</p>
             <p>Talle :  {talle}</p>
-            <button>Comprar</button>
+            <ItemCount stock={stock}></ItemCount>
+           
         </div>
     )
 }

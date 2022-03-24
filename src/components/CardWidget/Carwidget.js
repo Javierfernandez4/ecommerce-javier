@@ -1,9 +1,8 @@
-
+import imgcarrito from "../../media/carrito.png"
 const CardWidget = () => {
     return(
         <div>
-            <img src="../media/carrito.jpg"></img>
-            <p>img carrito 4</p>
+            <img src={imgcarrito}></img> <p>4</p>
         </div>
     )
 }
