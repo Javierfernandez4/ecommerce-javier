@@ -8,9 +8,11 @@ const ItemCount = ({stock}) => {
         if (count < stock){
             setCount(count +1)
         }
-        
-    }
+        if (count > stock){
+            setCount(count -1)
+        }
 
+    }
     return(
     <>
         <button>-</button>
@@ -19,5 +21,8 @@ const ItemCount = ({stock}) => {
     </>
     )
 }
+
+
+
 
 export default ItemCount

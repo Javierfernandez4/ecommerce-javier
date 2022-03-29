@@ -44,3 +44,7 @@ ul.navbar li{
   justify-content: space-around;
   align-items: center;
 }
+
+.card-item > img {
+  width: 100%;
+}
